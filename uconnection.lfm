@@ -1,0 +1,79 @@
+object frmConnection: TfrmConnection
+  Left = 202
+  Height = 338
+  Top = 250
+  Width = 409
+  Caption = 'Connection'
+  ClientHeight = 338
+  ClientWidth = 409
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 20
+    Top = 8
+    Width = 174
+    Caption = 'JSON SQL Webservice Test'
+    Font.Height = 20
+    ParentColor = False
+    ParentFont = False
+  end
+  object edWebService: TLabeledEdit
+    Left = 24
+    Height = 23
+    Top = 72
+    Width = 360
+    EditLabel.Height = 15
+    EditLabel.Width = 360
+    EditLabel.Caption = 'Web Service'
+    EditLabel.ParentColor = False
+    TabOrder = 0
+    Text = 'http://103.56.205.179/sqljson'
+  end
+  object edHostname: TLabeledEdit
+    Left = 24
+    Height = 23
+    Top = 128
+    Width = 360
+    EditLabel.Height = 15
+    EditLabel.Width = 360
+    EditLabel.Caption = 'MySQL Hostname'
+    EditLabel.ParentColor = False
+    TabOrder = 1
+    Text = '103.56.205.179'
+  end
+  object edUsername: TLabeledEdit
+    Left = 24
+    Height = 23
+    Top = 184
+    Width = 360
+    EditLabel.Height = 15
+    EditLabel.Width = 360
+    EditLabel.Caption = 'Username'
+    EditLabel.ParentColor = False
+    TabOrder = 2
+    Text = 'root'
+  end
+  object edPassword: TLabeledEdit
+    Left = 24
+    Height = 23
+    Top = 240
+    Width = 360
+    EchoMode = emPassword
+    EditLabel.Height = 15
+    EditLabel.Width = 360
+    EditLabel.Caption = 'Password'
+    EditLabel.ParentColor = False
+    PasswordChar = '*'
+    TabOrder = 3
+    Text = 'setulushati'
+  end
+  object btnEnter: TButton
+    Left = 264
+    Height = 41
+    Top = 280
+    Width = 107
+    Caption = 'Enter'
+    OnClick = btnEnterClick
+    TabOrder = 4
+  end
+end
